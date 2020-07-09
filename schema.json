@@ -1,16 +1,16 @@
 {
    "$schema":"https://specs.frictionlessdata.io/schemas/table-schema.json",
-   "name":"objets-importants",
-   "title":"Schéma des objets importants",
-   "description":"Spécification du fichier d'échange relatif aux objets importants gérés par les collectivités.",
+   "name":"equipements-velo",
+   "title":"équipements vélo",
+   "description":"Spécification des équipements vélo.",
    "keywords":[
-      "objets",
-      "autre-tag"
+      "transport",
+      "vélo",
+      "tourisme"	  
    ],
    "countryCode":"FR",
-   "homepage":"https://github.com/mon-orga/schema-objets-importants",
-   "path":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/schema.json",
-   "image":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/irve.png",
+   "homepage":"https://github.com/smevel/schema-equipements-velo",
+   "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.2.0/schema.json",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -22,46 +22,229 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/exemple-valide.csv"
+         "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.2.0/exemple-valide.csv"
       }
    ],
-   "sources":[
-      {
-         "title":"Arrêté du 12 janvier 2017 relatif aux objets importants",
-         "path":"https://beta.legifrance.gouv.fr/codes/id/LEGISCTA000031367685/2020-05-25"
-      }
-   ],
-   "created":"2018-06-29",
-   "lastModified":"2019-05-06",
-   "version":"0.1.1",
+   "created":"2020-06-05",
+   "lastModified":"2020-06-22",
+   "version":"0.2.0",
    "contributors":[
       {
-         "title":"John Smith",
-         "email":"john.smith@etalab.gouv.fr",
-         "organisation":"Etalab",
+         "title":"GéoBretagne",
+         "email":"sig@bretagne.bzh",
+         "organisation":"GéoBretagne",
          "role":"author"
-      },
-      {
-         "title":"Jane Doe",
-         "email":"jane.doe@example.com",
-         "organisation":"Association très importante",
-         "role":"contributor"
       }
    ],
    "fields":[
       {
-         "name":"id",
-         "description":"Un identifiant unique de l'objet.",
-         "example":"42",
-         "type":"integer",
+         "name":"id_equip",
+         "description":"identifiant unique de l’équipement.",
+         "example":"22250-0001",
+         "type":"string",
          "constraints":{
-            "required":true,
-            "minimum":1
+            "required":true
          }
       },
       {
-         "name":"date_creation",
-         "description":"La date de création de l'objet, au format ISO 8601 AAAA-MM-DD.",
+         "name":"id_local",
+         "description":"identifiant unique de l’équipement par le gestionnaire.",
+         "type":"string",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"type_equip",
+         "description":"type d’équipement",
+         "example":"atelier d’auto-réparation et d’entretien",
+         "type":"string",
+         "constraints":{
+            "required":true,
+			"enum":[
+				"abri",
+				"aire de jeux",
+				"atelier d’auto-réparation et d’entretien",
+				"banc",
+				"borne wifi",
+				"point d’eau potable",
+				"point de recharges",
+				"poubelles",
+				"sanitaires",
+				"relais information services (RIS)",
+				"stationnement vélo courte durée",
+				"stationnement vélo longue durée",
+				"consigne bagage sécurisée",
+				"table de pique-nique"
+			]			
+         }
+      },
+      {
+         "name":"ss_type_equip",
+         "description":"sous-type d’équipement.",
+         "example":"station de lavage",
+         "type":"string",
+         "constraints":{
+            "required":false,
+			"enum":[
+				"station de lavage",
+				"station de réparation",
+				"station de gonflage",
+				"permettant le remplissage d’une bouteille",
+				"ne permettant pas le remplissage d’une bouteille",
+				"téléphone",
+				"VAE",
+				"douche",
+				"toilettes",
+				"toilettes sèches",
+				"arceau - appui vélo",
+				"pince-roues",
+				"box vélo sécurisé"
+			]
+         }
+      },	  
+      {
+         "name":"capacite",
+         "description":"nombre de places assises pour les tables ou de vélos attachables.",
+         "example":"5",
+         "type":"integer",
+         "constraints":{
+            "required":false,
+            "minimum":0			
+         }
+      },
+      {
+         "name":"etat",
+         "description":"état d’entretien de l'équipement.",
+         "example":"hors service",
+         "type":"string",
+         "constraints":{
+            "required":false,
+			"enum":[
+				"bon",
+				"moyen",
+				"dégradé",
+				"hors service"
+			]
+         }
+      },
+      {
+         "name":"proprietaire",
+         "description":"propriétaire de l’équipement.",
+         "example":"Commune",
+         "type":"string",
+         "constraints":{
+            "required":false,
+			"enum":[
+				"commune",
+				"Département",
+				"EPCI",
+				"privé",
+				"Région"				
+			]
+         }
+      },
+      {
+         "name":"gestionnaire",
+         "description":"organisme responsable de l’entretien de l’équipement.",
+         "example":"commune",
+         "type":"string",
+         "constraints":{
+            "required":false,
+			"enum":[
+				"commune",
+				"Département",
+				"EPCI",
+				"privé",
+				"Région"				
+			]
+         }
+      },	  
+      {
+         "name":"couvert",
+         "description":"caractéristique des stationnements vélo et des lieux de restauration (table de pique-nique) : abrité ou non.",
+         "example":"true",
+         "type":"boolean",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"gratuit",
+         "description":"information sur le caractère gratuit ou payant pour les équipements spécifiques : stationnement voiture longue durée, sanitaires, stationnement vélo longue durée,consigne bagage sécurisée.",
+         "example":"true",
+         "type":"boolean",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"long",
+         "description":"La longitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation de l’équipement exprimée dans le système de coordonnées WGS84.",
+         "example":"-4.16894",
+         "type":"number",
+         "constraints":{
+			"required":true,
+			"minimum":-180,
+			"maximum":180
+         }
+      },
+      {
+         "name":"lat",
+         "description":"La latitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation de l'équipement exprimée dans le système de coordonnées WGS84.",
+         "example":"47.8317",
+         "type":"number",
+         "constraints":{
+			"required":true,
+			"minimum":-90,
+			"maximum":90
+         }
+      },
+      {
+         "name":"X",
+         "description":"La longitude de la localisation de l’équipement exprimée dans le système de projection légal en vigueur sur le territoire concerné",
+         "example":"164351",
+         "type":"number",
+         "constraints":{
+			"required":false
+         }
+      },
+      {
+         "name":"Y",
+         "description":"La latitude de la localisation de l'équipement exprimée dans le système de projection légal en vigueur sur le territoire concerné",
+         "example":"6772341",
+         "type":"number",
+         "constraints":{
+			"required":false
+         }
+      },
+      {
+         "name":"image",
+         "description":"lien vers la photo de l’équipement",
+		 "format": "uri",		 
+         "example":"url/22250-0001.png",
+         "type":"string",
+         "constraints":{
+			"required":false
+         }
+      },
+      {
+         "name":"source",
+         "description":"Source de la saisie de l’équipement",
+         "example":"terrain",
+         "type":"string",
+         "constraints":{
+			"required":false,
+			"enum":[
+				"mapilary",
+				"OSM",
+				"terrain"
+			]
+         }
+      },	  
+      {
+         "name":"date_maj",
+         "description":"Cette date est celle de la dernière mise à jour connue de la donnée. Elle est exprimée au format AAAA-MM-JJ suivant la norme internationale [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601).",
          "example":"2020-02-27",
          "type":"date",
          "constraints":{
@@ -69,14 +252,14 @@
          }
       },
       {
-         "name":"nom",
-         "description":"Le nom de l'objet.",
-         "example":"Brouette",
+         "name":"commentaire",
+         "description":"Commentaires éventuels.",
+         "example":"recharge VAE rapide",
          "type":"string",
          "constraints":{
-            "required":true
+            "required":false
          }
       }
    ],
-   "primaryKey":"id"
+   "primaryKey":"id_equip"
 }
