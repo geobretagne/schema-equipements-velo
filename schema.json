@@ -10,7 +10,7 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/smevel/schema-equipements-velo",
-   "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.2.0/schema.json",
+   "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.3.0/schema.json",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -22,25 +22,31 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.2.0/exemple-valide.csv"
+         "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.3.0/exemple-valide.csv"
       }
    ],
    "created":"2020-06-05",
-   "lastModified":"2020-06-22",
-   "version":"0.2.0",
+   "lastModified":"2020-09-10",
+   "version":"0.3.0",
    "contributors":[
       {
          "title":"GéoBretagne",
          "email":"sig@bretagne.bzh",
          "organisation":"GéoBretagne",
          "role":"author"
-      }
+      },
+	{
+	  "title":"A compléter",
+	  "email":"xxx@xxxx.fr",
+	  "organisation":"xxx",
+	  "role":"contributor"
+	}	  
    ],
    "fields":[
       {
          "name":"id_equip",
-         "description":"identifiant unique de l’équipement.",
-         "example":"22250-0001",
+         "description":"L'identifiant unique de l'équipement vélo, délivré par le Point d’accès national ou l'aggrégateur. `INSEE-EV-xxxx` où `INSEE` est le code INSEE de la commune et `xxxx` est le numéro d’ordre sur 4 chiffres.",
+         "example":"22250-EV-0001",
          "type":"string",
          "constraints":{
             "required":true
@@ -48,7 +54,7 @@
       },
       {
          "name":"id_local",
-         "description":"identifiant unique de l’équipement par le gestionnaire.",
+         "description":"identifiant unique de l’équipement géré par le gestionnaire.",
          "type":"string",
          "constraints":{
             "required":false
@@ -94,6 +100,9 @@
 				"ne permettant pas le remplissage d’une bouteille",
 				"téléphone",
 				"VAE",
+				"tout venant"
+				"tri sélectif"
+				"duo"				
 				"douche",
 				"toilettes",
 				"toilettes sèches",
@@ -105,7 +114,7 @@
       },	  
       {
          "name":"capacite",
-         "description":"nombre de places assises pour les tables ou de vélos attachables.",
+         "description":"nombre de places de vélos attachables et consignes",
          "example":"5",
          "type":"integer",
          "constraints":{
@@ -162,7 +171,7 @@
       },	  
       {
          "name":"couvert",
-         "description":"caractéristique des stationnements vélo et des lieux de restauration (table de pique-nique) : abrité ou non.",
+         "description":"caractéristique des lieux de restauration (table de pique-nique) et des stationnements vélo : abrité ou non",
          "example":"true",
          "type":"boolean",
          "constraints":{
@@ -170,8 +179,8 @@
          }
       },
       {
-         "name":"gratuit",
-         "description":"information sur le caractère gratuit ou payant pour les équipements spécifiques : stationnement voiture longue durée, sanitaires, stationnement vélo longue durée,consigne bagage sécurisée.",
+         "name":"payant",
+         "description":"information sur le caractère payant pour les équipements spécifiques : sanitaires, stationnement vélo longue durée,consigne bagage sécurisée.",
          "example":"true",
          "type":"boolean",
          "constraints":{
@@ -239,6 +248,16 @@
 				"mapilary",
 				"OSM",
 				"terrain"
+			]
+         }
+      },
+      {
+         "name":"producteur",
+         "description":"Producteur de la donnée",
+         "example":"Quimper Cornouaille développement",
+         "type":"string",
+         "constraints":{
+			"required":true
 			]
          }
       },	  

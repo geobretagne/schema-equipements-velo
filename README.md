@@ -7,7 +7,7 @@ Spécification du modèle de données relatif aux équipements vélo
 <p>La Région Bretagne et Tourisme en Bretagne souhaitent développer l'offre de services le long des itinéraires vélo en Bretagne.</p>
 <p>En amont de la phase de recensement des équipements, un groupe de travail, animé par [GéoBretagne](https://geobretagne.fr), a co-construit un référentiel de données des équipements vélo. Après une première phase de concertation au niveau des acteurs bretons, plusieurs relecteurs nationaux ont validé le schéma proposé.</p>
 Si nécessaire, il sera mise à jour, adapté et consolidé.
-<p> Le document collaboratif du groupe de travail est visible [ici](https://docs.google.com/document/d/e/2PACX-1vTJOQw0eMIz8G03DL6oQ2PoRxbROSmbltUPFlGSAR-x6EGSVGnRD58G32OsHe8jNg/pub).</p>
+<p> Le document collaboratif du groupe de travail est visible: https://docs.google.com/document/d/e/2PACX-1vTJOQw0eMIz8G03DL6oQ2PoRxbROSmbltUPFlGSAR-x6EGSVGnRD58G32OsHe8jNg/pub.</p>
 
 ### Format des fichiers
 
@@ -19,11 +19,13 @@ equip_velo_regionbretagne_233500016_20200611.csv
 
 ## Fichiers d’exemples
 
-Vous pouvez télécharger le fichier gabarit d’exemple au [format CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/exemple-valide.csv).
+Vous pouvez télécharger le fichier gabarit d’exemple au format :</br>
+. [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.csv)
+. [geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.gpkg)
 
 ## Saisie des équipements
 
-Vous pouvez télécharger le projet QGIS au [format QGZ](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/saisie-equipements-velo.qgz) pour réaliser  la saisie des équipements de votre territoire sur la base du fichier gabarit d’exemple au [format geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/exemple-valide.gpkg).
+Vous pouvez télécharger le projet QGIS au [format QGZ](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/saisie-equipements-velo.qgz) pour réaliser  la saisie des équipements de votre territoire sur la base du fichier gabarit d’exemple au format.
 En éditant la couche, un formulaire automatique permet d'alimenter la couche des équipements vélo en renseignant les champs.
 Des tests sur Qfield vont être réalisés pour permettre la saisie terrain (mode connecté et déconnecté).
 
