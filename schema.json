@@ -251,8 +251,7 @@
          "example":"Quimper Cornouaille développement",
          "type":"string",
          "constraints":{
-			"required":true
-			]
+		"required":true
          }
       },	  
       {
