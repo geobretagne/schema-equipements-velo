@@ -19,16 +19,12 @@ equip_velo_regionbretagne_233500016_20200611.csv
 ## Fichiers d’exemples
 
 Vous pouvez télécharger le fichier gabarit d’exemple au format :</br>
-. [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.csv)
+. [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.csv)</br>
 . [geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.gpkg)
 
 ## Saisie des équipements
 
 Vous pouvez télécharger le projet QGIS au [format QGZ](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/saisie-equipements-velo.qgz) pour réaliser  la saisie des équipements de votre territoire sur la base du fichier gabarit d’exemple au format.
-
-Vous pouvez télécharger le fichier gabarit d’exemple aux formats :</br>
-. [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/exemple-valide.csv)</br>
-. [geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/exemple-valide.gpkg)</br>
 
 ## Saisie des équipements
 
