@@ -4,22 +4,20 @@ Spécification du modèle de données relatif aux équipements vélo
 
 ## Contexte
 
-<p>La Région Bretagne et Tourisme en Bretagne souhaitent développer l'offre de services le long des itinéraires vélo en Bretagne.</p>
-<p>En amont de la phase de recensement des équipements, un groupe de travail, animé par [GéoBretagne](https://geobretagne.fr), a co-construit un référentiel de données des équipements vélo. Après une première phase de concertation au niveau des acteurs bretons, plusieurs relecteurs nationaux ont validé le schéma proposé.</p>
-Si nécessaire, il sera mise à jour, adapté et consolidé.
-<p> Le document collaboratif du groupe de travail est visible: https://docs.google.com/document/d/e/2PACX-1vTJOQw0eMIz8G03DL6oQ2PoRxbROSmbltUPFlGSAR-x6EGSVGnRD58G32OsHe8jNg/pub.</p>
+La Région Bretagne et Tourisme en Bretagne souhaitent développer l'offre de services le long des itinéraires vélo en Bretagne.</br>
+En amont de la phase de recensement des équipements, un groupe de travail, animé par [GéoBretagne](https://geobretagne.fr), a co-construit un référentiel de données des équipements vélo. Après une première phase de concertation au niveau des acteurs bretons, plusieurs relecteurs nationaux ont validé le schéma proposé.</br>
+Si nécessaire, il sera mise à jour, adapté et consolidé. Le document collaboratif du groupe de travail est visible [en ligne](https://docs.google.com/document/d/e/2PACX-1vTJOQw0eMIz8G03DL6oQ2PoRxbROSmbltUPFlGSAR-x6EGSVGnRD58G32OsHe8jNg/pub).</p>
 
 ### Format des fichiers
 
-<p>Le fichier doit être encodé en UTF-8 et utiliser le point-virgule comme séparateur de colonnes. 
-Le nom du fichier comporte la date de création du jeu de données, la désignation du producteur et son code SIREN. Le tout sans espace ni accent et en minuscules, soit : equip_velo_producteur_siren_AAAAMMJJ.csv</p>
+Le fichier doit être encodé en UTF-8 et utiliser le point-virgule comme séparateur de colonnes.</br>
+Le nom du fichier comporte la date de création du jeu de données, la désignation du producteur et son code SIREN. Le tout sans espace ni accent et en minuscules, soit : equip_velo_producteur_siren_AAAAMMJJ.csv</br>
 Exemples :</br>
 equip_velo_sioca_802894816_20200611.csv</br>
 equip_velo_regionbretagne_233500016_20200611.csv
 
 ## Fichiers d’exemples
 
-<<<<<<< HEAD
 Vous pouvez télécharger le fichier gabarit d’exemple au format :</br>
 . [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.csv)
 . [geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.gpkg)
@@ -27,7 +25,7 @@ Vous pouvez télécharger le fichier gabarit d’exemple au format :</br>
 ## Saisie des équipements
 
 Vous pouvez télécharger le projet QGIS au [format QGZ](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/saisie-equipements-velo.qgz) pour réaliser  la saisie des équipements de votre territoire sur la base du fichier gabarit d’exemple au format.
-=======
+
 Vous pouvez télécharger le fichier gabarit d’exemple aux formats :</br>
 . [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/exemple-valide.csv)</br>
 . [geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/exemple-valide.gpkg)</br>
@@ -35,9 +33,9 @@ Vous pouvez télécharger le fichier gabarit d’exemple aux formats :</br>
 ## Saisie des équipements
 
 Vous pouvez télécharger le projet QGIS au [format QGZ](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/saisie-equipements-velo.qgz) pour réaliser  la saisie des équipements de votre territoire sur la base du fichier gabarit d’exemple au format.
->>>>>>> 5d89c54c150408441487275ee509d3e3692d8595
+
 En éditant la couche, un formulaire automatique permet d'alimenter la couche des équipements vélo en renseignant les champs.
-Des tests sur Qfield vont être réalisés pour permettre la saisie terrain (mode connecté et déconnecté).
+Des tests sur [Qfield](https://qfield.org/) vont être réalisés pour permettre la saisie terrain (mode connecté et déconnecté).
 
 ## Voir aussi
 
