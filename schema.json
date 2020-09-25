@@ -128,6 +128,7 @@
 				"moyen",
 				"dégradé",
 				"hors service"
+				"en projet"				
 			]
          }
       },
@@ -239,9 +240,11 @@
          "constraints":{
 			"required":false,
 			"enum":[
-				"mapilary",
+				"orthophoplan",
 				"OSM",
-				"terrain"
+				"mapilary",
+				"google maps",
+				"relevé GPS"
 			]
          }
       },
