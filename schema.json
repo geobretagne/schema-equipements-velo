@@ -34,13 +34,7 @@
          "email":"sig@bretagne.bzh",
          "organisation":"GéoBretagne",
          "role":"author"
-      },
-	{
-	  "title":"A compléter",
-	  "email":"xxx@xxxx.fr",
-	  "organisation":"xxx",
-	  "role":"contributor"
-	}	  
+      }	  
    ],
    "fields":[
       {
