@@ -34,13 +34,7 @@
          "email":"sig@bretagne.bzh",
          "organisation":"GéoBretagne",
          "role":"author"
-      },
-	{
-	  "title":"A compléter",
-	  "email":"xxx@xxxx.fr",
-	  "organisation":"xxx",
-	  "role":"contributor"
-	}	  
+      }	  
    ],
    "fields":[
       {
@@ -102,7 +96,11 @@
 				"VAE",
 				"tout venant",
 				"tri sélectif",
+<<<<<<< HEAD
 				"duo",		
+=======
+				"duo",			
+>>>>>>> 1462d1b3e0ffa2320aba26a0f96cf0c2eb43f903
 				"douche",
 				"toilettes",
 				"toilettes sèches",
@@ -133,7 +131,8 @@
 				"bon",
 				"moyen",
 				"dégradé",
-				"hors service"
+				"hors service",
+				"en projet"				
 			]
          }
       },
@@ -245,9 +244,11 @@
          "constraints":{
 			"required":false,
 			"enum":[
-				"mapilary",
+				"orthophoplan",
 				"OSM",
-				"terrain"
+				"mapilary",
+				"google maps",
+				"relevé GPS"
 			]
          }
       },
@@ -257,8 +258,7 @@
          "example":"Quimper Cornouaille développement",
          "type":"string",
          "constraints":{
-			"required":true
-			]
+		"required":true
          }
       },	  
       {
