@@ -24,7 +24,7 @@ Vous pouvez télécharger le fichier gabarit d’exemple au format :</br>
 
 ## Saisie des équipements
 
-Vous pouvez télécharger le projet QGIS au [format QGZ](https://github.com/geobretagne/schema-equipements-velo/raw/v0.2.0/saisie-equipements-velo.qgz) pour réaliser  la saisie des équipements de votre territoire sur la base du fichier gabarit d’exemple au format.
+Vous pouvez télécharger le projet QGIS au [format QGZ](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/saisie-equipements-velo.qgz) pour réaliser  la saisie des équipements de votre territoire sur la base du fichier gabarit d’exemple au format.
 
 En éditant la couche, un formulaire automatique permet d'alimenter la couche des équipements vélo en renseignant les champs.
 Des tests sur [Qfield](https://qfield.org/) vont être réalisés pour permettre la saisie terrain (mode connecté et déconnecté).
