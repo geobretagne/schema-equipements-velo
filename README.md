@@ -6,7 +6,7 @@ Spécification du modèle de données relatif aux équipements vélo
 
 La Région Bretagne et Tourisme en Bretagne souhaitent développer l'offre de services le long des itinéraires vélo en Bretagne.</br>
 En amont de la phase de recensement des équipements, un groupe de travail, animé par [GéoBretagne](https://geobretagne.fr), a co-construit un référentiel de données des équipements vélo. Après une première phase de concertation au niveau des acteurs bretons, plusieurs relecteurs nationaux ont validé le schéma proposé.</br>
-Si nécessaire, il sera mise à jour, adapté et consolidé. Le document collaboratif du groupe de travail est visible [en ligne](https://docs.google.com/document/d/e/2PACX-1vTJOQw0eMIz8G03DL6oQ2PoRxbROSmbltUPFlGSAR-x6EGSVGnRD58G32OsHe8jNg/pub).</p>
+Si nécessaire, il sera mis à jour, adapté et consolidé. Le document collaboratif du groupe de travail est visible [en ligne](https://docs.google.com/document/d/e/2PACX-1vTJOQw0eMIz8G03DL6oQ2PoRxbROSmbltUPFlGSAR-x6EGSVGnRD58G32OsHe8jNg/pub).</p>
 
 ### Format des fichiers
 
