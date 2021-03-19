@@ -1,3 +1,3 @@
-id_equip,id_local,type_equip,ss_type_equip,capacite,etat,proprietaire,gestionnaire,couvert,payant,acces_pmr,long ,lat,X,Y,image,source,producteur,date_maj,commentaire
- 29135-EV-0001,1,stationnement vélo courte durée,arceau - appui vélo,,bon,commune,commune,false,false,false,-4.16894,47.8317,164351,6772341,,relevé GPS,QCD,2018-04-06,
- 29135-EV-0002,2,stationnement vélo courte durée,pince-roues,20,bon,commune,commune,false,false,false,-4.18585,47.83332,164589,6771843,,relevé GPS,QCD,2018-03-19,
+id_equip	id_local	type_equip	ss_type_equip	capacite	etat	proprietaire	gestionnaire	couvert	payant	acces_pmr	long 	lat	X	Y	image	source	producteur	date_maj	commentaire
+ 29135-EV-0001	1	stationnement vélo courte durée	arceau - appui vélo		bon	commune	commune	false	false	false	-4.16894	47.8317	164351	6772341		relevé GPS	QCD	2018-04-06	
+ 29135-EV-0002	2	stationnement vélo courte durée	pince-roues	20	bon	commune	commune	false	false	false	-4.18585	47.83332	164589	6771843		relevé GPS	QCD	2018-03-19	
