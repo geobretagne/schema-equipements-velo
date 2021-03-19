@@ -10,7 +10,7 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/smevel/schema-equipements-velo",
-   "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.3.0/schema.json",
+   "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.4.0/schema.json",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -22,7 +22,7 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.3.0/exemple-valide.csv"
+         "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.4.0/exemple-valide.csv"
       }
    ],
    "created":"2020-06-05",
