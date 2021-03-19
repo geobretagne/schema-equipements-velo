@@ -265,11 +265,7 @@
 				"relevé GPS"
 			]
          }
-<<<<<<< HEAD
-      }, 
-=======
-      },  
->>>>>>> b66fca6f5e9bca2790137b139641f5f8299d3f51
+      },		 
       {
          "name":"producteur",
          "description":"Producteur de la donnée",
