@@ -181,16 +181,7 @@
          "constraints":{
             "required":false
          }
-      },	  
-      {
-         "name":"acces_PMR",
-         "description":"Producteur de la donnée",
-         "example":"true",
-         "type":"boolean",
-         "constraints":{
-		"required":false
-         }
-      },	   
+      },	     
       {
          "name":"acces_pmr",
          "description":"information sur l'accessibilité des équipements.",
