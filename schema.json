@@ -22,12 +22,12 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.4.0/exemple-valide.csv"
+         "path":"https://raw.githubusercontent.com/geobretagne/schema-equipements-velo/master/exemple-valide.csv"
       }
    ],
    "created":"2020-06-05",
-   "lastModified":"2020-09-10",
-   "version":"0.3.0",
+   "lastModified":"2021-03-21",
+   "version":"0.4.0",
    "contributors":[
       {
          "title":"GéoBretagne",
@@ -181,7 +181,16 @@
          "constraints":{
             "required":false
          }
-      },
+      },	  
+      {
+         "name":"acces_PMR",
+         "description":"Producteur de la donnée",
+         "example":"true",
+         "type":"boolean",
+         "constraints":{
+		"required":false
+         }
+      },	   
       {
          "name":"long",
          "description":"La longitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation de l’équipement exprimée dans le système de coordonnées WGS84.",
@@ -247,17 +256,7 @@
 				"relevé GPS"
 			]
          }
-      },
-	  
-      {
-         "name":"acces_PMR",
-         "description":"Producteur de la donnée",
-         "example":"true",
-         "type":"boolean",
-         "constraints":{
-		"required":false
-         }
-      },	  
+      },  
       {
          "name":"producteur",
          "description":"Producteur de la donnée",
