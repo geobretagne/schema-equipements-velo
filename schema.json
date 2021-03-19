@@ -248,6 +248,16 @@
 			]
          }
       },
+	  
+      {
+         "name":"acces_PMR",
+         "description":"Producteur de la donnée",
+         "example":"true",
+         "type":"boolean",
+         "constraints":{
+		"required":false
+         }
+      },	  
       {
          "name":"producteur",
          "description":"Producteur de la donnée",
