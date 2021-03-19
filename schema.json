@@ -10,7 +10,7 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/smevel/schema-equipements-velo",
-   "path":"https://github.com/smevel/schema-equipements-velo/raw/v0.4.0/schema.json",
+   "path":"https://raw.githubusercontent.com/geobretagne/schema-equipements-velo/master/schema.json",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
