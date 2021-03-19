@@ -19,8 +19,8 @@ equip_velo_regionbretagne_233500016_20200611.csv
 ## Fichiers d’exemples
 
 Vous pouvez télécharger le fichier gabarit d’exemple au format :</br>
-. [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.csv)</br>
-. [geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.3.0/exemple-valide.gpkg)
+. [CSV](https://github.com/geobretagne/schema-equipements-velo/raw/v0.4.0/exemple-valide.csv)</br>
+. [geopackage](https://github.com/geobretagne/schema-equipements-velo/raw/v0.4.0/exemple-valide.gpkg)
 
 ## Saisie des équipements
 
