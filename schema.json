@@ -72,10 +72,12 @@
 				"poubelles",
 				"sanitaires",
 				"relais information services (RIS)",
-				"stationnement vélo courte durée",
-				"stationnement vélo longue durée",
 				"consigne bagage sécurisée",
-				"table de pique-nique"
+				"table de pique-nique",				
+				"stationnement ancrage cadre et roue",
+				"stationnement sans accroche",
+				"stationnement ancrage roue",
+				"stationnement ancrage cadre"
 			]			
          }
       },
@@ -100,13 +102,32 @@
 				"douche",
 				"toilettes",
 				"toilettes sèches",
-				"arceau - appui vélo",
-				"pince-roues",
-				"box vélo sécurisé"
+				"arceau / appui vélo",
+				"rack double-étage",
+				"support guidon",
+				"arceau vélo grande taille",
+				"aucun équipement",
+				"râtelier / pince-roues",
+				"crochet",
+				"potelet"
 			]
          }
       },	  
       {
+         "name":"protection",
+         "description":"définit le type de protection de l'équipement",
+         "example":"",
+         "type":"texte",
+         "constraints":{
+            "required":false,
+            "enum":[
+				"stationnement non fermé",
+				"consigne collective fermée",
+				"box individuel fermé",
+				"autre"
+			]			
+         }
+      },      {
          "name":"capacite",
          "description":"nombre de places de vélos attachables et consignes",
          "example":"5",
@@ -232,13 +253,31 @@
          }
       },
       {
-         "name":"image",
+         "name":"photo",
          "description":"lien vers la photo de l’équipement",
 		 "format": "uri",		 
          "example":"url/22250-0001.png",
          "type":"string",
          "constraints":{
 			"required":false
+         }
+      },
+      {
+         "name":"src_photo",
+         "description":"permet d'indiquer la source de la photo.",
+         "example":"2020-02-27",
+         "type":"texte",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"l_photo",
+         "description":"permet d'indiquer la licence de la photo.",
+         "example":"2020-02-27",
+         "type":"texte",
+         "constraints":{
+            "required":false
          }
       },
       {
@@ -283,7 +322,16 @@
          "constraints":{
             "required":false
          }
-      }
+      },
+      {
+         "name":"id_regroupement",
+         "description":"identifiant de l'aire de service ou de la halte repos auquel appartient l'équipement.",
+         "example":"recharge VAE rapide",
+         "type":"string",
+         "constraints":{
+            "required":false
+         }
+      }  
    ],
    "primaryKey":"id_equip"
 }
