@@ -48,7 +48,8 @@
       },
       {
          "name":"id_local",
-         "description":"identifiant unique de l’équipement géré par le gestionnaire.",
+         "description":"identifiant unique de l’équipement géré par le gestionnaire",
+         "example":"0001",		 
          "type":"string",
          "constraints":{
             "required":false
@@ -83,7 +84,7 @@
       },
       {
          "name":"ss_type_equip",
-         "description":"sous-type d’équipement.",
+         "description":"sous-type d’équipement",
          "example":"station de lavage",
          "type":"string",
          "constraints":{
@@ -116,7 +117,7 @@
       {
          "name":"protection",
          "description":"définit le type de protection de l'équipement",
-         "example":"",
+         "example":"box individuel fermé",
          "type":"texte",
          "constraints":{
             "required":false,
@@ -265,7 +266,7 @@
       {
          "name":"src_photo",
          "description":"permet d'indiquer la source de la photo.",
-         "example":"2020-02-27",
+         "example":"Département des Côtes d'Armor",
          "type":"texte",
          "constraints":{
             "required":false
@@ -274,7 +275,7 @@
       {
          "name":"l_photo",
          "description":"permet d'indiquer la licence de la photo.",
-         "example":"2020-02-27",
+         "example":"CC BY 2.0",
          "type":"texte",
          "constraints":{
             "required":false
@@ -326,7 +327,7 @@
       {
          "name":"id_regroupement",
          "description":"identifiant de l'aire de service ou de la halte repos auquel appartient l'équipement.",
-         "example":"recharge VAE rapide",
+         "example":"",
          "type":"string",
          "constraints":{
             "required":false
