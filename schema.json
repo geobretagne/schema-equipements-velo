@@ -26,8 +26,8 @@
       }
    ],
    "created":"2020-06-05",
-   "lastModified":"2021-03-19",
-   "version":"0.4.1",
+   "lastModified":"2021-11-19",
+   "version":"0.5.0",
    "contributors":[
       {
          "title":"GéoBretagne",
@@ -118,7 +118,7 @@
          "name":"protection",
          "description":"définit le type de protection de l'équipement",
          "example":"box individuel fermé",
-         "type":"texte",
+         "type":"string",
          "constraints":{
             "required":false,
             "enum":[
@@ -268,7 +268,7 @@
          "name":"src_photo",
          "description":"permet d'indiquer la source de la photo.",
          "example":"Département des Côtes d'Armor",
-         "type":"texte",
+         "type":"string",
          "constraints":{
             "required":false
          }
@@ -277,7 +277,7 @@
          "name":"l_photo",
          "description":"permet d'indiquer la licence de la photo.",
          "example":"CC BY 2.0",
-         "type":"texte",
+         "type":"string",
          "constraints":{
             "required":false
          }
