@@ -128,7 +128,8 @@
 				"autre"
 			]			
          }
-      },      {
+      },
+      {
          "name":"capacite",
          "description":"nombre de places de vélos attachables et consignes",
          "example":"5",
